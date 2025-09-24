@@ -1,0 +1,446 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="float-end">
+        <button type="submit" id="button-save" form="form-setting" data-bs-toggle="tooltip" title="{{ button_save }}"  class="btn btn-primary">
+          <i class="fa fa-save"></i>
+        </button>
+        <a href="{{ cancel }}" data-bs-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-secondary">
+          <i class="fa fa-reply"></i>
+        </a>
+      </div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible fade show"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+    {% if success %}
+    <div class="alert alert-success alert-dismissible fade show"><i class="fa fa-check-circle"></i> {{ success }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+    <div class="card">
+      <div class="card-header">
+        <i class="fa fa-pencil"></i> {{ text_edit }}
+      </div>
+      <div class="card-body">
+       <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-setting">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="tab_general-tab" data-bs-toggle="tab" href="#tab_general" role="tab" aria-controls="tab_general" aria-selected="false">{{ tab_general }}</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="tab_user-tab" data-bs-toggle="tab" href="#tab_user" role="tab" aria-controls="tab_user" aria-selected="false">{{ tab_user }}</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="tab-option-tab" data-bs-toggle="tab" href="#tab-option" role="tab" aria-controls="tab-option" aria-selected="false">{{ tab_option }}</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="tab-image-tab" data-bs-toggle="tab" href="#tab-image" role="tab" aria-controls="tab-image" aria-selected="false">{{ tab_image }}</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane active" id="tab_general">
+                <div class="row mb-3 required">
+                    <label for="input-name" class="col-sm-2 col-form-label">{{ entry_name }}</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="name" value="{{ name }}" placeholder="{{ entry_name }}" id="input-name" class="form-control"/>
+                        {% if error_name %}
+                            <div id="error-name" class="invalid-feedback">{{ error_name }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row mb-3 required">
+                    <label for="input-owner" class="col-sm-2 col-form-label">{{ entry_owner }}</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="owner" value="{{ owner }}" placeholder="{{ entry_owner }}" id="input-owner" class="form-control"/>
+                        {% if error_owner %}
+                            <div id="error-owner" class="invalid-feedback d-block">{{ error_owner }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row mb-3 required">
+                    <label for="input-address" class="col-sm-2 col-form-label">{{ entry_address }}</label>
+                    <div class="col-sm-10">
+                        <textarea name="address" placeholder="{{ entry_address }}" rows="5" id="input-address" class="form-control">{{ address }}</textarea>
+                        {% if error_address %}
+                            <div id="error-address" class="invalid-feedback d-block">{{ error_address }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row mb-3 required">
+                    <label for="input-email" class="col-sm-2 col-form-label">{{ entry_email }}</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}" id="input-email" class="form-control"/>
+                        {% if error_email %}
+                            <div id="error-email" class="invalid-feedback d-block">{{ error_email }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="row mb-3 required">
+                    <label for="input-telephone" class="col-sm-2 col-form-label">{{ entry_telephone }}</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="telephone" value="{{ telephone }}" placeholder="{{ entry_telephone }}" id="input-telephone" class="form-control"/>
+                        {% if error_telephone %}
+                            <div id="error-telephone" class="invalid-feedback d-block">{{ error_telephone }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                 <div class="row mb-3">
+                    <label for="input-image" class="col-sm-2 col-form-label">{{ entry_image }}</label>
+                    <div class="col-sm-10">
+                      <div class="card image">
+                        <img src="{{ thumb }}" alt="" title="" id="thumb-image" data-oc-placeholder="{{ placeholder }}" class="card-img-top"/> <input type="hidden" name="image" value="{{ image }}" id="input-image"/>
+                        <div class="card-body">
+                          <button type="button" data-oc-toggle="image" data-oc-target="#input-image" data-oc-thumb="#thumb-image" class="btn btn-primary btn-sm btn-block"><i class="fa-solid fa-pencil"></i> {{ button_edit }}</button>
+                          <button type="button" data-oc-toggle="clear" data-oc-target="#input-image" data-oc-thumb="#thumb-image" class="btn btn-warning btn-sm btn-block"><i class="fa-regular fa-trash-can"></i> {{ button_clear }}</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="row mb-3">
+                    <label for="input-open" class="col-sm-2 col-form-label">
+                        <span data-toggle="tooltip" data-container="#tab-general" title="{{ help_open }}">{{ entry_open }}</span>
+                    </label>
+                    <div class="col-sm-10">
+                        <textarea name="open" rows="5" placeholder="{{ entry_open }}" id="input-open" class="form-control">{{ open }}</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab_user">
+                <fieldset>
+                  <legend>{{ text_user }}</legend>
+                  <div class="row mb-3 required">
+                    <label for="input-username" class="col-sm-2 col-form-label">{{ entry_username }}</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="username" value="{{ username }}" placeholder="{{ entry_username }}" id="input-username" class="form-control"/>
+                      <div id="error-username" class="invalid-feedback"></div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 required">
+                    <label for="input-firstname" class="col-sm-2 col-form-label">{{ entry_firstname }}</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="firstname" value="{{ firstname }}" placeholder="{{ entry_firstname }}" id="input-firstname" class="form-control"/>
+                      <div id="error-firstname" class="invalid-feedback"></div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 required">
+                    <label for="input-lastname" class="col-sm-2 col-form-label">{{ entry_lastname }}</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="lastname" value="{{ lastname }}" placeholder="{{ entry_lastname }}" id="input-lastname" class="form-control"/>
+                      <div id="error-lastname" class="invalid-feedback"></div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 required">
+                    <label for="input-user_email" class="col-sm-2 col-form-label">User Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="user_email" value="{{ user_email }}" placeholder="User Email" id="input-user_email" class="form-control"/>
+                      <div id="error-user_email" class="invalid-feedback"></div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="input-user-image" class="col-sm-2 col-form-label">User Image</label>
+                    <div class="col-sm-10">
+                      <div class="card image">
+                        <img src="{{ user_thumb }}" alt="" title="" id="user-thumb-image" data-oc-placeholder="{{ placeholder }}" class="card-img-top"/> <input type="hidden" name="user_image" value="{{ user_image }}" id="input-user-image"/>
+                        <div class="card-body">
+                          <button type="button" data-oc-toggle="image" data-oc-target="#input-user-image" data-oc-thumb="#user-thumb-image" class="btn btn-primary btn-sm btn-block"><i class="fa-solid fa-pencil"></i> {{ button_edit }}</button>
+                          <button type="button" data-oc-toggle="clear" data-oc-target="#input-user-image" data-oc-thumb="#user-thumb-image" class="btn btn-warning btn-sm btn-block"><i class="fa-regular fa-trash-can"></i> {{ button_clear }}</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Password</legend>
+                  <div class="row mb-3 required">
+                    <label for="input-password" class="col-sm-2 col-form-label">{{ entry_password }}</label>
+                    <div class="col-sm-10">
+                      <input type="password" name="password" value="{{ password }}" placeholder="{{ entry_password }}" id="input-password" class="form-control" autocomplete="new-password"/>
+                      <div id="error-password" class="invalid-feedback"></div>
+                    </div>
+                  </div>
+                  <div class="row mb-3 required">
+                    <label for="input-confirm" class="col-sm-2 col-form-label">{{ entry_confirm }}</label>
+                    <div class="col-sm-10">
+                      <input type="password" name="confirm" value="{{ confirm }}" placeholder="{{ entry_confirm }}" id="input-confirm" class="form-control"/>
+                      <div id="error-confirm" class="invalid-feedback"></div>
+                    </div>
+                  </div>
+                </fieldset>
+            </div>
+            
+            {# <div class="tab-pane" id="tab-option">
+              <fieldset>
+                <legend>{{ text_tax }}</legend>
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">{{ entry_tax }}</label>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_tax" value="1" {% if config_tax %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_yes }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_tax" value="0" {% if not config_tax %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_no }}</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="input-tax-default" class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_tax_default }}">{{ entry_tax_default }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <select name="config_tax_default" id="input-tax-default" class="form-select">
+                      <option value="">{{ text_none }}</option>
+                      <option value="shipping" {% if config_tax_default == 'shipping' %}selected="selected"{% endif %}>{{ text_shipping }}</option>
+                      <option value="payment" {% if config_tax_default == 'payment' %}selected="selected"{% endif %}>{{ text_payment }}</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="input-tax-customer" class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_tax_customer }}">{{ entry_tax_customer }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <select name="config_tax_customer" id="input-tax-customer" class="form-select">
+                      <option value="">{{ text_none }}</option>
+                      <option value="shipping" {% if config_tax_customer == 'shipping' %}selected="selected"{% endif %}>{{ text_shipping }}</option>
+                      <option value="payment" {% if config_tax_customer == 'payment' %}selected="selected"{% endif %}>{{ text_payment }}</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>{{ text_account }}</legend>
+                <div class="row mb-3">
+                  <label for="input-customer-group" class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_customer_group }}">{{ entry_customer_group }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <select name="config_customer_group_id" id="input-customer-group" class="form-select">
+                      {% for customer_group in customer_groups %}
+                        <option value="{{ customer_group.customer_group_id }}" {% if customer_group.customer_group_id == config_customer_group_id %}selected="selected"{% endif %}>
+                          {{ customer_group.name }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_customer_group_display }}">{{ entry_customer_group_display }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    {% for customer_group in customer_groups %}
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="config_customer_group_display[]" value="{{ customer_group.customer_group_id }}" {% if customer_group.customer_group_id in config_customer_group_display %}checked="checked"{% endif %} />
+                        <label class="form-check-label">{{ customer_group.name }}</label>
+                      </div>
+                    {% endfor %}
+                    {% if error_customer_group_display %}
+                      <div class="text-danger">{{ error_customer_group_display }}</div>
+                    {% endif %}
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_customer_price }}">{{ entry_customer_price }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_customer_price" value="1" {% if config_customer_price %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_yes }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_customer_price" value="0" {% if not config_customer_price %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_no }}</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="input-account" class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_account }}">{{ entry_account }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <select name="config_account_id" id="input-account" class="form-select">
+                      <option value="0">{{ text_none }}</option>
+                      {% for information in informations %}
+                        <option value="{{ information.information_id }}" {% if information.information_id == config_account_id %}selected="selected"{% endif %}>
+                          {{ information.title }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>{{ text_checkout }}</legend>
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">{{ entry_cart_weight }}</label>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_cart_weight" value="1" {% if config_cart_weight %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_yes }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_cart_weight" value="0" {% if not config_cart_weight %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_no }}</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_checkout_guest }}">{{ entry_checkout_guest }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_checkout_guest" value="1" {% if config_checkout_guest %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_yes }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_checkout_guest" value="0" {% if not config_checkout_guest %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_no }}</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="input-checkout" class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_checkout }}">{{ entry_checkout }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <select name="config_checkout_id" id="input-checkout" class="form-select">
+                      <option value="0">{{ text_none }}</option>
+                      {% for information in informations %}
+                        <option value="{{ information.information_id }}" {% if information.information_id == config_checkout_id %}selected="selected"{% endif %}>
+                          {{ information.title }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="input-order-status" class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_order_status }}">{{ entry_order_status }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <select name="config_order_status_id" id="input-order-status" class="form-select">
+                      {% for order_status in order_statuses %}
+                        <option value="{{ order_status.order_status_id }}" {% if order_status.order_status_id == config_order_status_id %}selected="selected"{% endif %}>
+                          {{ order_status.name }}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>{{ text_stock }}</legend>
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_stock_display }}">{{ entry_stock_display }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_stock_display" value="1" {% if config_stock_display %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_yes }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_stock_display" value="0" {% if not config_stock_display %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_no }}</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">
+                    <span data-toggle="tooltip" title="{{ help_stock_checkout }}">{{ entry_stock_checkout }}</span>
+                  </label>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_stock_checkout" value="1" {% if config_stock_checkout %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_yes }}</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="config_stock_checkout" value="0" {% if not config_stock_checkout %}checked="checked"{% endif %} />
+                      <label class="form-check-label">{{ text_no }}</label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="tab-pane" id="tab-image">
+              <div class="row mb-3">
+                  <label for="input-logo" class="col-sm-2 col-form-label">{{ entry_logo }}</label>
+                  <div class="col-sm-10">
+                      <div class="card image">
+                          <img src="{{ logo }}" alt="" title="" id="thumb-logo" data-oc-placeholder="{{ placeholder }}" class="card-img-top" />
+                          <input type="hidden" name="config_logo" value="{{ config_logo }}" id="input-logo" />
+                          <div class="card-body">
+                              <button type="button" data-oc-toggle="image" data-oc-target="#input-logo" data-oc-thumb="#thumb-logo" class="btn btn-primary btn-sm btn-block">
+                                  <i class="fa-solid fa-pencil"></i>
+                                  {{ button_edit }}
+                              </button>
+                              <button type="button" data-oc-toggle="clear" data-oc-target="#input-logo" data-oc-thumb="#thumb-logo" class="btn btn-warning btn-sm btn-block">
+                                  <i class="fa-regular fa-trash-can"></i>
+                                  {{ button_clear }}
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row mb-3">
+                  <label for="input-icon" class="col-sm-2 col-form-label"><span data-toggle="tooltip" title="{{ help_icon }}">{{ entry_icon }}</span></label>
+                  <div class="col-sm-10">
+                      <div class="card image">
+                          <img src="{{ icon }}" alt="" title="" id="thumb-icon" data-oc-placeholder="{{ placeholder }}" class="card-img-top" />
+                          <input type="hidden" name="config_icon" value="{{ config_icon }}" id="input-icon" />
+                          <div class="card-body">
+                              <button type="button" data-oc-toggle="image" data-oc-target="#input-icon" data-oc-thumb="#thumb-icon" class="btn btn-primary btn-sm btn-block">
+                                  <i class="fa-solid fa-pencil"></i>
+                                  {{ button_edit }}
+                              </button>
+                              <button type="button" data-oc-toggle="clear" data-oc-target="#input-icon" data-oc-thumb="#thumb-icon" class="btn btn-warning btn-sm btn-block">
+                                  <i class="fa-regular fa-trash-can"></i>
+                                  {{ button_clear }}
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div> #}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{ footer }}
