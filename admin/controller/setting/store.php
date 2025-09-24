@@ -154,7 +154,6 @@ class ControllerSettingStore extends Controller {
 			$data['error_warning'] = '';
 		}
 
-
 		if (isset($this->error['name'])) {
 			$data['error_name'] = $this->error['name'];
 		} else {
@@ -183,6 +182,44 @@ class ControllerSettingStore extends Controller {
 			$data['error_telephone'] = $this->error['telephone'];
 		} else {
 			$data['error_telephone'] = '';
+		}
+
+		//user error
+
+		if (isset($this->error['username'])) {
+			$data['error_username'] = $this->error['username'];
+		} else {
+			$data['error_username'] = '';
+		}
+
+		if (isset($this->error['firstname'])) {
+			$data['error_firstname'] = $this->error['firstname'];
+		} else {
+			$data['error_firstname'] = '';
+		}
+
+		if (isset($this->error['lastname'])) {
+			$data['error_lastname'] = $this->error['lastname'];
+		} else {
+			$data['error_lastname'] = '';
+		}
+
+		if (isset($this->error['user_email'])) {
+			$data['error_user_email'] = $this->error['user_email'];
+		} else {
+			$data['error_user_email'] = '';
+		}
+
+		if (isset($this->error['password'])) {
+			$data['error_password'] = $this->error['password'];
+		} else {
+			$data['error_password'] = '';
+		}
+
+		if (isset($this->error['confirm'])) {
+			$data['error_confirm'] = $this->error['confirm'];
+		} else {
+			$data['error_confirm'] = '';
 		}
 
 		$data['breadcrumbs'] = array();
@@ -413,55 +450,48 @@ class ControllerSettingStore extends Controller {
 		}
 
 		// --- User Validation ---
-		if (isset($this->request->post['username']) &&
-			((utf8_strlen($this->request->post['username']) < 3) || (utf8_strlen($this->request->post['username']) > 20))) {
+
+		if ((utf8_strlen($this->request->post['username']) < 3) || (utf8_strlen($this->request->post['username']) > 20)) {
 			$this->error['username'] = $this->language->get('error_username');
 		}
 
-		if (isset($this->request->post['username'])) {
-			$user_info = $this->model_user_user->getUserByUsername($this->request->post['username']);
+		$user_info = $this->model_user_user->getUserByUsername($this->request->post['username']);
 
-			if (!isset($this->request->get['user_id'])) {
-				if ($user_info) {
-					$this->error['warning'] = $this->language->get('error_exists_username');
-				}
-			} else {
-				if ($user_info && ($this->request->get['user_id'] != $user_info['user_id'])) {
-					$this->error['warning'] = $this->language->get('error_exists_username');
-				}
+		if (!isset($this->request->get['store_id'])) {
+			if ($user_info) {
+				$this->error['warning'] = $this->language->get('error_exists_username');
+			}
+		} else {
+			if ($user_info && ($this->request->post['user_id'] != $user_info['user_id'])) {
+				$this->error['warning'] = $this->language->get('error_exists_username');
 			}
 		}
 
-		if (isset($this->request->post['firstname']) &&
-			((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32))) {
+		if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
 			$this->error['firstname'] = $this->language->get('error_firstname');
 		}
 
-		if (isset($this->request->post['lastname']) &&
-			((utf8_strlen(trim($this->request->post['lastname'])) < 1) || (utf8_strlen(trim($this->request->post['lastname'])) > 32))) {
+		if ((utf8_strlen(trim($this->request->post['lastname'])) < 1) || (utf8_strlen(trim($this->request->post['lastname'])) > 32)) {
 			$this->error['lastname'] = $this->language->get('error_lastname');
 		}
 
-		if (isset($this->request->post['email']) &&
-			((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL))) {
+		if ((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) {
 			$this->error['email'] = $this->language->get('error_email');
 		}
 
-		if (isset($this->request->post['user_email'])) {
-			$user_info = $this->model_user_user->getUserByEmail($this->request->post['user_email']);
+		$user_info = $this->model_user_user->getUserByEmail($this->request->post['email']);
 
-			if (!isset($this->request->get['user_id'])) {
-				if ($user_info) {
-					$this->error['warning'] = $this->language->get('error_exists_email');
-				}
-			} else {
-				if ($user_info && ($this->request->get['user_id'] != $user_info['user_id'])) {
-					$this->error['warning'] = $this->language->get('error_exists_email');
-				}
+		if (!isset($this->request->get['store_id'])) {
+			if ($user_info) {
+				$this->error['warning'] = $this->language->get('error_exists_email');
+			}
+		} else {
+			if ($user_info && ($this->request->get['user_id'] != $user_info['user_id'])) {
+				$this->error['warning'] = $this->language->get('error_exists_email');
 			}
 		}
 
-		if (isset($this->request->post['password']) || (!isset($this->request->get['user_id']))) {
+		if ($this->request->post['password'] || (!isset($this->request->get['store_id']))) {
 			if ((utf8_strlen(html_entity_decode($this->request->post['password'], ENT_QUOTES, 'UTF-8')) < 4) || (utf8_strlen(html_entity_decode($this->request->post['password'], ENT_QUOTES, 'UTF-8')) > 40)) {
 				$this->error['password'] = $this->language->get('error_password');
 			}

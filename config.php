@@ -1,14 +1,14 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost/multi_seller_api/');
+define('HTTP_SERVER', 'http://localhost/multi_store_api_git/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost/multi_seller_api/');
+define('HTTPS_SERVER', 'http://localhost/multi_store_api_git/');
 
 // DIR
-define('DIR_APPLICATION', '/Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/catalog/');
-define('DIR_SYSTEM', '/Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/');
-define('DIR_IMAGE', '/Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/image/');
+define('DIR_APPLICATION', '/Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/catalog/');
+define('DIR_SYSTEM', '/Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/');
+define('DIR_IMAGE', '/Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
