@@ -2,7 +2,7 @@
 class ControllerCommonDashboard extends Controller {
 	public function index() {
 		$this->load->language('common/dashboard');
-		var_dump($this->user->getId());
+
 		$this->document->setTitle($this->language->get('heading_title'));
 
 		$data['user_token'] = $this->session->data['user_token'];

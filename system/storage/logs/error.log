@@ -82,3 +82,7 @@
 2025-09-23 20:08:08 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
 2025-09-23 20:08:08 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
 2025-09-24 9:30:42 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
+2025-09-24 20:42:15 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-24 20:42:15 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-24 20:42:41 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-24 20:42:41 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
