@@ -12,48 +12,6 @@ class ControllerCommonColumnLeft extends Controller {
 					'href'     => $this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token']),
 					'children' => []
 				];
-				
-				$setting = [];
-				if ($this->user->hasPermission('access', 'common/setting')) {
-					$setting[] = [
-						'name'	   => $this->language->get('text_setting'),
-						'href'     => $this->url->link('common/setting', 'user_token=' . $this->session->data['user_token']),
-						'children' => []
-					];
-				}
-
-				if ($this->user->hasPermission('access', 'common/broker')) {
-					$setting[] = [
-						'name'	   => 'Broker',
-						'href'     => $this->url->link('common/broker', 'user_token=' . $this->session->data['user_token']),
-						'children' => []
-					];
-				}
-				
-				if ($this->user->hasPermission('access', 'localisation/country')) {
-					$setting[] = array(
-						'name'	   => $this->language->get('text_country'),
-						'href'     => $this->url->link('localisation/country', 'user_token=' . $this->session->data['user_token'], true),
-						'children' => array()
-					);
-				}
-
-				if ($this->user->hasPermission('access', 'localisation/zone')) {
-					$setting[] = array(
-						'name'	   => $this->language->get('text_zone'),
-						'href'     => $this->url->link('localisation/zone', 'user_token=' . $this->session->data['user_token'], true),
-						'children' => array()
-					);
-				}
-				if ($setting) {
-					$data['menus'][] = [
-						'id'       => 'menu-setting',
-						'icon'	   => 'fas fa-cog',
-						'name'	   => 'Setting',
-						'href'     => '',
-						'children' => $setting
-					];
-				}
 
 				// Catalog
 				$catalog = [];
@@ -81,41 +39,8 @@ class ControllerCommonColumnLeft extends Controller {
 						'children' => $catalog
 					];
 				}
-				//investment_form
-				$data['menus'][] = [
-					'id'       => 'menu-investment_form',
-					'icon' => 'fas fa-chart-line',
-					'name'	   => $this->language->get('Investment Form'),
-					'href'     => $this->url->link('investment_form/investment_form', 'user_token=' . $this->session->data['user_token']),
-					'children' => []
-				];
-
-				//contact_form
-				$data['menus'][] = [
-					'id'       => 'menu-contact_form',
-					'icon' => 'fas fa-envelope',
-					'name'	   => $this->language->get('Contact Form'),
-					'href'     => $this->url->link('contact_form/contact_form', 'user_token=' . $this->session->data['user_token']),
-					'children' => []
-				];
-				//onboarding_form
-				$data['menus'][] = [
-					'id'       => 'menu-onboarding_form',
-					'icon' => 'fas fa-envelope',
-					'name'	   => $this->language->get('OnBoarding Form'),
-					'href'     => $this->url->link('onboarding_form/onboarding_form', 'user_token=' . $this->session->data['user_token']),
-					'children' => []
-				];
 
 				$faq = array();
-				if ($this->user->hasPermission('access', 'catalog/faq_category')) {
-					$faq[] = array(
-						'name'	   => 'Category',
-						'href'     => $this->url->link('catalog/faq_category', 'user_token=' . $this->session->data['user_token'], true),
-						'children' => array()
-					);
-				}
-
 				if ($this->user->hasPermission('access', 'catalog/faq')) {
 					$faq[] = array(
 						'name'     => 'FAQS',
@@ -123,14 +48,6 @@ class ControllerCommonColumnLeft extends Controller {
 						'children' => array()
 					);
 				}
-				if ($this->user->hasPermission('access', 'extension/module/contact_us_component')) {
-					$faq[] = array(
-						'name'     => 'Contact Us',
-						'href'     => $this->url->link('extension/module/contact_us_component', 'user_token=' . $this->session->data['user_token'], true),
-						'children' => array()
-					);
-				}
-
 				if ($faq) {
 					$data['menus'][] = array(
 						'id'       => 'menu-catalog',
@@ -146,13 +63,6 @@ class ControllerCommonColumnLeft extends Controller {
 					$blog[] = array(
 						'name'	   => 'Blog',
 						'href'     => $this->url->link('blog/blog', 'user_token=' . $this->session->data['user_token'], true),
-						'children' => array()
-					);
-				}
-				if ($this->user->hasPermission('access', 'blog/keyword')) {
-					$blog[] = array(
-						'name'	   => 'Keywords',
-						'href'     => $this->url->link('blog/keyword', 'user_token=' . $this->session->data['user_token'], true),
 						'children' => array()
 					);
 				}
@@ -225,6 +135,7 @@ class ControllerCommonColumnLeft extends Controller {
 							'children' => []
 						];
 					}
+
 					if ($this->user->hasPermission('access', 'localisation/language')) {
 						$system[] = [
 							'name'	   => $this->language->get('text_language'),
@@ -232,6 +143,22 @@ class ControllerCommonColumnLeft extends Controller {
 							'children' => []
 						];
 					}
+
+					// if ($this->user->hasPermission('access', 'localisation/country')) {
+					// 	$system[] = array(
+					// 		'name'	   => $this->language->get('text_country'),
+					// 		'href'     => $this->url->link('localisation/country', 'user_token=' . $this->session->data['user_token'], true),
+					// 		'children' => array()
+					// 	);
+					// }
+
+					// if ($this->user->hasPermission('access', 'localisation/zone')) {
+					// 	$system[] = array(
+					// 		'name'	   => $this->language->get('text_zone'),
+					// 		'href'     => $this->url->link('localisation/zone', 'user_token=' . $this->session->data['user_token'], true),
+					// 		'children' => array()
+					// 	);
+					// }
 					// Users
 					$user = [];
 
@@ -282,6 +209,45 @@ class ControllerCommonColumnLeft extends Controller {
 					'href'     => $this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token']),
 					'children' => []
 				];
+
+				$catalog = [];
+				if ($this->user->hasPermission('access', 'catalog/category')) {
+					$catalog[] = [
+						'name'	   => $this->language->get('text_category'),
+						'href'     => $this->url->link('catalog/category', 'user_token=' . $this->session->data['user_token']),
+						'children' => []
+					];
+				}
+				if ($catalog) {
+					$data['menus'][] = [
+						'id'       => 'menu-catalog',
+						'icon'	   => 'fa-solid fa-tag',
+						'name'	   => $this->language->get('text_catalog'),
+						'href'     => '',
+						'children' => $catalog
+					];
+				}
+
+				// System
+				$system = [];
+
+				if ($this->user->hasPermission('access', 'setting/setting')) {
+					$system[] = [
+						'name'	   => $this->language->get('text_setting'),
+						'href'     => $this->url->link('setting/store/edit', 'user_token=' . $this->session->data['user_token']. '&store_id='.$this->user->getStoreId()),
+						'children' => []
+					];
+				}
+
+				if ($system) {
+					$data['menus'][] = [
+						'id'       => 'menu-system',
+						'icon'	   => 'fas fa-cog',
+						'name'	   => $this->language->get('text_system'),
+						'href'     => '',
+						'children' => $system
+					];
+				}
 			}
 			return $this->load->view('common/column_left', $data);
 		}

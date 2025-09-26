@@ -1,90 +1,221 @@
-2025-09-23 17:05:36 - PHP Warning:  Undefined array key "config_url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 657
-2025-09-23 17:05:36 - PHP Warning:  Undefined array key "config_meta_title" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 661
-2025-09-23 17:05:52 - PHP Warning:  Undefined array key "config_url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 657
-2025-09-23 17:05:52 - PHP Warning:  Undefined array key "config_meta_title" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 661
-2025-09-23 17:16:11 - PHP Warning:  Undefined array key "config_url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 285
-2025-09-23 18:06:03 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-23 18:07:12 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-23 18:07:13 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-23 18:08:03 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'dat_added' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-23 18:08:03 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'dat_added' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-23 19:43:41 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 231
-2025-09-23 19:43:41 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 231
-2025-09-23 19:43:50 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 231
-2025-09-23 19:43:50 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 231
-2025-09-23 19:44:39 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:44:39 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:44:45 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:44:45 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:46:13 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:46:13 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:47:25 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 238
-2025-09-23 19:47:25 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 238
-2025-09-23 19:50:32 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 238
-2025-09-23 19:50:32 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 238
-2025-09-23 19:51:01 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 238
-2025-09-23 19:51:01 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 238
-2025-09-23 19:51:17 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 237
-2025-09-23 19:51:17 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 237
-2025-09-23 19:51:21 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:51:21 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:51:41 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:51:41 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 19:52:10 - PHP Warning:  Undefined array key "desciption" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/model/setting/store.php on line 4
-2025-09-23 19:52:10 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/model/setting/store.php on line 4
-2025-09-23 19:52:10 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'desciption' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-23 19:52:35 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/model/setting/store.php on line 4
-2025-09-23 19:52:35 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/model/setting/store.php on line 4
-2025-09-23 19:52:35 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 19:52:35 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 19:59:34 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 19:59:34 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:00:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 20:00:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:00:18 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:00:25 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:00:25 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:00:25 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:00:44 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:00:44 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:00:44 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:03:44 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:03:44 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:03:44 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:03:49 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:03:49 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:03:49 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:03:58 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:03:58 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:03:58 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:04:36 - PHP Warning:  Undefined variable $user_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 235
-2025-09-23 20:04:36 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:04:36 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:04:36 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:04:47 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 20:04:47 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:05:15 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 20:05:15 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:05:17 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:05:26 - PHP Warning:  Undefined variable $user_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 235
-2025-09-23 20:05:26 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:05:26 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:05:26 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:07:56 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:07:56 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:07:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:07:57 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 20:07:57 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:07:58 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 116
-2025-09-23 20:07:58 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:07:59 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-23 20:08:08 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:08:08 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/setting/store.php on line 236
-2025-09-23 20:08:08 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/admin/controller/common/header.php on line 108
-2025-09-24 9:30:42 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_seller_api/system/library/db/mysqli.php on line 25
-2025-09-24 20:42:15 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
-2025-09-24 20:42:15 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
-2025-09-24 20:42:41 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
-2025-09-24 20:42:41 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
-2025-09-25 11:00:31 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/db/mysqli.php on line 25
-2025-09-25 11:01:47 - PHP Warning:  mysqli::query(): (42S22/1054): Unknown column 'url' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/db/mysqli.php on line 25
+2025-09-25 19:07:38 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:07:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:07:43 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:07:47 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:07:50 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:08:04 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:08:12 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:08:32 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:08:33 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:08:35 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:09:18 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:09:31 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:09:52 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:09:53 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:10:26 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:11:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:12:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:13:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:13:43 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:13:55 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:14 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:17 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:18 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:19 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:19 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:23 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:15:28 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:16:08 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:17:02 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:17:14 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:17:26 - PHP Warning:  foreach() argument must be of type array|object, null given in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/marketing/marketing.php on line 34
+2025-09-25 19:17:26 - PHP Warning:  mysqli::query(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AND o.marketing_id = m.marketing_id) AS orders FROM oc_marketing m ORDER BY...' at line 1 in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/db/mysqli.php on line 25
+2025-09-25 19:17:30 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:17:34 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:17:37 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:17:37 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:18:28 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:18:28 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:18:39 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 57
+2025-09-25 19:18:39 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:18:39 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:18:39 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:18:42 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:18:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:18:43 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:18:43 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:18:43 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:18:46 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:03 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:09 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:14 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 57
+2025-09-25 19:19:14 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:14 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:14 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:15 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:15 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:34 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:34 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:54 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:54 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:55 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:55 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:55 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:55 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:56 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:56 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:56 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:19:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:19:58 - PHP Warning:  Undefined array key "permission" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/system/library/cart/user.php on line 31
+2025-09-25 19:20:01 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:07 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:10 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:12 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:19 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:20 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:24 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:25 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:29 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:32 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:34 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:40 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:20:46 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:10 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:22:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:23 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:22:23 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:25 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:34 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:36 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:22:36 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:37 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:22:37 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:39 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:22:50 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:22:50 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:27:38 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:27:45 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:27:50 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 116
+2025-09-25 19:27:50 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:27:52 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:27:53 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:27:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 19:28:02 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 275
+2025-09-25 19:28:02 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 275
+2025-09-25 19:28:02 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:01:53 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:20:23 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:20:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:31:21 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:31:26 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:31:26 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:31:27 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:31:41 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:31:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:32:22 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:32:28 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:32:59 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:33:36 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:33:46 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:33:52 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:34:07 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:34:07 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:34:32 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:38:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:38:49 - PHP Warning:  Undefined variable $store_info in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 278
+2025-09-25 20:38:49 - PHP Warning:  Trying to access array offset on value of type null in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 278
+2025-09-25 20:38:49 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:38:58 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 119
+2025-09-25 20:38:58 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:39:27 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 119
+2025-09-25 20:39:27 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:39:32 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:39:36 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:39:39 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 119
+2025-09-25 20:39:40 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:39:40 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:43:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:43:07 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:43:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 121
+2025-09-25 20:43:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:43:13 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 121
+2025-09-25 20:43:13 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:43:17 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:05 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:07 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:09 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:12 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:56:12 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:56:12 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:14 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:56:55 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:56:55 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:56:55 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:57:02 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:57:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:57:08 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:57:10 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 133
+2025-09-25 20:57:10 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:57:11 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:57:12 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:57:12 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:57:12 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 133
+2025-09-25 20:57:12 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:27 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:28 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:59:28 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:59:28 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 137
+2025-09-25 20:59:28 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:29 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:30 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:31 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 137
+2025-09-25 20:59:31 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:37 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:42 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:45 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:59:45 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:59:45 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:52 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:59:52 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:59:52 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 20:59:55 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 20:59:55 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 20:59:55 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:00:04 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-25 21:00:04 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-25 21:00:04 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:00:16 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:00:20 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:00:22 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:01:15 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:01:17 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:01:18 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:01:19 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:01:22 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:01:29 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-25 21:02:16 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:03:50 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:03:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/setting/store.php on line 137
+2025-09-26 6:03:56 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:05:16 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:05:21 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:05:23 - PHP Warning:  Undefined array key "description" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 33
+2025-09-26 6:05:23 - PHP Warning:  Undefined array key "store_logo" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/model/setting/store.php on line 35
+2025-09-26 6:05:23 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:05:24 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:05:27 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:05:31 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:06:36 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:06:45 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:06:48 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:06:57 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:06:59 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:07:01 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:07:03 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108
+2025-09-26 6:07:06 - PHP Warning:  Undefined array key "url" in /Applications/XAMPP/xamppfiles/htdocs/multi_store_api_git/admin/controller/common/header.php on line 108

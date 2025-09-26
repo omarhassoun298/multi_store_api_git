@@ -13,6 +13,10 @@ class ControllerSettingStore extends Controller {
 	}
 
 	public function add() {
+		if($this->user->getStoreId() != 0){
+			$this->response->redirect($this->url->link('error/permission', 'user_token=' . $this->session->data['user_token'], true));
+		}
+
 		$this->load->language('setting/store');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -33,6 +37,10 @@ class ControllerSettingStore extends Controller {
 	}
 
 	public function edit() {
+		if($this->user->getStoreId() != 0 && $this->user->getStoreId() != $this->request->get['store_id']){
+			$this->response->redirect($this->url->link('error/permission', 'user_token=' . $this->session->data['user_token'], true));
+		}
+
 		$this->load->language('setting/store');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -46,13 +54,21 @@ class ControllerSettingStore extends Controller {
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
-			$this->response->redirect($this->url->link('setting/store', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true));
+			if($this->user->getStoreId() != 0){
+				$this->response->redirect($this->url->link('setting/store/edit', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true));
+			} else {
+				$this->response->redirect($this->url->link('setting/store', 'user_token=' . $this->session->data['user_token'], true));	
+			}
 		}
 
 		$this->getForm();
 	}
 
 	public function delete() {
+		if($this->user->getStoreId() != 0){
+			$this->response->redirect($this->url->link('error/permission', 'user_token=' . $this->session->data['user_token'], true));
+		}
+
 		$this->load->language('setting/store');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -75,6 +91,11 @@ class ControllerSettingStore extends Controller {
 	}
 
 	protected function getList() {
+
+		if($this->user->getStoreId() != 0){
+			$this->response->redirect($this->url->link('error/permission', 'user_token=' . $this->session->data['user_token'], true));
+		}
+
 		$url = '';
 
 		if (isset($this->request->get['page'])) {
@@ -259,6 +280,8 @@ class ControllerSettingStore extends Controller {
 		} else {
 			$data['action'] = $this->url->link('setting/store/edit', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true);
 		}
+
+		
 
 		$data['cancel'] = $this->url->link('setting/store', 'user_token=' . $this->session->data['user_token'], true);
 
