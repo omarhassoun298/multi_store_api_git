@@ -100,14 +100,13 @@ class ControllerCommonHeader extends Controller {
 
 			$this->load->model('setting/store');
 
-			$results = $this->model_setting_store->getStores();
+			// $results = $this->model_setting_store->getStores();
 
-			foreach ($results as $result) {
-				$data['stores'][] = array(
-					'name' => $result['name'],
-					'href' => $result['url']
-				);
-			}
+			// foreach ($results as $result) {
+			// 	$data['stores'][] = array(
+			// 		'name' => $result['name'],
+			// 	);
+			// }
 		}
 
 		return $this->load->view('common/header', $data);

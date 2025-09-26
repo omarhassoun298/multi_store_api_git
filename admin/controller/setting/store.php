@@ -281,8 +281,9 @@ class ControllerSettingStore extends Controller {
 			$data['action'] = $this->url->link('setting/store/edit', 'user_token=' . $this->session->data['user_token'] . '&store_id=' . $this->request->get['store_id'], true);
 		}
 
-		
+		$data['is_stored'] = $this->user->getStoreId() == 0 ? true : false ; 
 
+		var_dump($data['is_stored']);
 		$data['cancel'] = $this->url->link('setting/store', 'user_token=' . $this->session->data['user_token'], true);
 
 		if (isset($this->request->get['store_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
